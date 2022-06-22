@@ -3,7 +3,7 @@ Given some WhatsApp chat log txt and media files, seive out useful data and gene
 
 This program makes use of Whatstk, Pandas and OpenPyXL.
 
-main.py : this is where the main loop is. Above the main loop are the functions, roughly corresponding to each column in Excel output and used to get useful data out of the chat logs. Since this can change, the function can be added/substracted and commented out as and when needed.
+main.py : this is where the main loop is. Above the main loop are the functions, roughly corresponding to each column in Excel output and used to get useful data out of the chat logs. Since this can change, the function can be added/substracted and commented out as and when needed. The main loops through each path, treating the contents inside each path as one big dataframe, processing the dataframe with functions to get what we want.
 
 helper.py : functions that does not pertain to data inside chat logs but necessary for overall working. Things like getting text filenames, filtering date, editing dates, moving-copying and getting text file contents into pandas dataframe.
 
